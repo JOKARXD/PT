@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <!-- Full Name Field -->
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        android:layout_below="@id/textViewFullName"
+        android:minHeight="48dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Phone Number Field -->
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_below="@id/editTextFullName"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:layout_below="@id/textViewPhoneNumber"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Type of Problem Field -->
+    <TextView
+        android:id="@+id/textViewProblemType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Problem"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextProblemType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Type of Problem"
+        android:minHeight="48dp"
+        android:layout_below="@id/textViewProblemType"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Problem Description Field -->
+    <TextView
+        android:id="@+id/textViewProblemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Problem Description"
+        android:layout_below="@id/editTextProblemType"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextProblemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Describe the Problem"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:layout_below="@id/textViewProblemDescription"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmitReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Report"
+        android:layout_below="@id/editTextProblemDescription"
+        android:layout_centerHorizontal="true"
+        android:minWidth="100dp"
+        android:minHeight="48dp" />
+</RelativeLayout>
